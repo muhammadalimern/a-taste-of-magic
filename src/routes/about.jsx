@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import aboutImage from "@/assets/about-chef.jpg";
-import oven from "@/assets/gallery-oven.jpg";
-import dining from "@/assets/gallery-dining.jpg";
+import aboutImage from "@/assets/about-chef.webp";
+import oven from "@/assets/gallery-oven.webp";
+import dining from "@/assets/gallery-dining.webp";
 import { ButtonLink } from "@/components/Button";
 import { PageHeader } from "@/components/PageHeader";
 import { SectionHeading } from "@/components/SectionHeading";

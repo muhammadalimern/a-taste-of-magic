@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ChefHat, CheckCircle2, Flame, Leaf, Sparkles, Wine } from "lucide-react";
 
-import heroImage from "@/assets/hero.jpg";
-import aboutImage from "@/assets/about-chef.jpg";
-import flatbread from "@/assets/dish-flatbread.jpg";
-import interior from "@/assets/gallery-interior.jpg";
-import hands from "@/assets/gallery-hands.jpg";
+import heroImage from "@/assets/hero.webp";
+import aboutImage from "@/assets/about-chef.webp";
+import flatbread from "@/assets/dish-flatbread.webp";
+import interior from "@/assets/gallery-interior.webp";
+import hands from "@/assets/gallery-hands.webp";
 import { ButtonLink } from "@/components/Button";
 import { MenuCard } from "@/components/MenuCard";
 import { Reveal } from "@/components/Reveal";

@@ -3,23 +3,23 @@
  * Frontend-only: swap these objects (or point them at your own source) to
  * change the menu. Every field below is used by the UI.
  */
-import burrata from "@/assets/dish-burrata.jpg";
-import scallops from "@/assets/dish-scallops.jpg";
-import soup from "@/assets/dish-soup.jpg";
-import flatbread from "@/assets/dish-flatbread.jpg";
-import duck from "@/assets/dish-duck.jpg";
-import salmon from "@/assets/dish-salmon.jpg";
-import shortrib from "@/assets/dish-shortrib.jpg";
-import burger from "@/assets/dish-burger.jpg";
-import mushroomBurger from "@/assets/dish-mushroom-burger.jpg";
-import margherita from "@/assets/dish-margherita.jpg";
-import trufflePizza from "@/assets/dish-truffle-pizza.jpg";
-import chocolate from "@/assets/dish-chocolate.jpg";
-import lemonTart from "@/assets/dish-lemon-tart.jpg";
-import sorbet from "@/assets/dish-sorbet.jpg";
-import cocktail from "@/assets/dish-cocktail.jpg";
-import wine from "@/assets/dish-wine.jpg";
-import coffee from "@/assets/dish-coffee.jpg";
+import burrata from "@/assets/dish-burrata.webp";
+import scallops from "@/assets/dish-scallops.webp";
+import soup from "@/assets/dish-soup.webp";
+import flatbread from "@/assets/dish-flatbread.webp";
+import duck from "@/assets/dish-duck.webp";
+import salmon from "@/assets/dish-salmon.webp";
+import shortrib from "@/assets/dish-shortrib.webp";
+import burger from "@/assets/dish-burger.webp";
+import mushroomBurger from "@/assets/dish-mushroom-burger.webp";
+import margherita from "@/assets/dish-margherita.webp";
+import trufflePizza from "@/assets/dish-truffle-pizza.webp";
+import chocolate from "@/assets/dish-chocolate.webp";
+import lemonTart from "@/assets/dish-lemon-tart.webp";
+import sorbet from "@/assets/dish-sorbet.webp";
+import cocktail from "@/assets/dish-cocktail.webp";
+import wine from "@/assets/dish-wine.webp";
+import coffee from "@/assets/dish-coffee.webp";
 
 export const categories = [
   "All",
