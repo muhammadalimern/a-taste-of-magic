@@ -1,12 +1,12 @@
-import interior from "@/assets/gallery-interior.jpg";
-import hands from "@/assets/gallery-hands.jpg";
-import dining from "@/assets/gallery-dining.jpg";
-import bar from "@/assets/gallery-bar.jpg";
-import oven from "@/assets/gallery-oven.jpg";
-import chef from "@/assets/about-chef.jpg";
-import flatbread from "@/assets/dish-flatbread.jpg";
-import duck from "@/assets/dish-duck.jpg";
-import cocktail from "@/assets/dish-cocktail.jpg";
+import interior from "@/assets/gallery-interior.webp";
+import hands from "@/assets/gallery-hands.webp";
+import dining from "@/assets/gallery-dining.webp";
+import bar from "@/assets/gallery-bar.webp";
+import oven from "@/assets/gallery-oven.webp";
+import chef from "@/assets/about-chef.webp";
+import flatbread from "@/assets/dish-flatbread.webp";
+import duck from "@/assets/dish-duck.webp";
+import cocktail from "@/assets/dish-cocktail.webp";
 
 export const galleryCategories = ["All", "Food", "Interior", "Chef", "Atmosphere"];
 

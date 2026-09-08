@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clock, MapPin, Phone } from "lucide-react";
 
-import interior from "@/assets/gallery-interior.jpg";
+import interior from "@/assets/gallery-interior.webp";
 import { PageHeader } from "@/components/PageHeader";
 import { ReservationForm } from "@/components/ReservationForm";
 import { site } from "@/data/site";
