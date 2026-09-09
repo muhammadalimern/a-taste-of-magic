@@ -8,119 +8,119 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as AboutRouteImport } from './routes/about'
-import { Route as CheckoutRouteImport } from './routes/checkout'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as FaqRouteImport } from './routes/faq'
-import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as MenuRouteImport } from './routes/menu'
-import { Route as ReservationRouteImport } from './routes/reservation'
+import { Route as rootRouteImport } from "./../routes/__root"
+import { Route as IndexRouteImport } from "./../routes/index"
+import { Route as AboutRouteImport } from "./../routes/about"
+import { Route as CheckoutRouteImport } from "./../routes/checkout"
+import { Route as ContactRouteImport } from "./../routes/contact"
+import { Route as FaqRouteImport } from "./../routes/faq"
+import { Route as GalleryRouteImport } from "./../routes/gallery"
+import { Route as MenuRouteImport } from "./../routes/menu"
+import { Route as ReservationRouteImport } from "./../routes/reservation"
 
 const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+  id: "/",
+  path: "/",
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
+  id: "/about",
+  path: "/about",
   getParentRoute: () => rootRouteImport,
 } as any)
 const CheckoutRoute = CheckoutRouteImport.update({
-  id: '/checkout',
-  path: '/checkout',
+  id: "/checkout",
+  path: "/checkout",
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
+  id: "/contact",
+  path: "/contact",
   getParentRoute: () => rootRouteImport,
 } as any)
 const FaqRoute = FaqRouteImport.update({
-  id: '/faq',
-  path: '/faq',
+  id: "/faq",
+  path: "/faq",
   getParentRoute: () => rootRouteImport,
 } as any)
 const GalleryRoute = GalleryRouteImport.update({
-  id: '/gallery',
-  path: '/gallery',
+  id: "/gallery",
+  path: "/gallery",
   getParentRoute: () => rootRouteImport,
 } as any)
 const MenuRoute = MenuRouteImport.update({
-  id: '/menu',
-  path: '/menu',
+  id: "/menu",
+  path: "/menu",
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReservationRoute = ReservationRouteImport.update({
-  id: '/reservation',
-  path: '/reservation',
+  id: "/reservation",
+  path: "/reservation",
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/checkout': typeof CheckoutRoute
-  '/contact': typeof ContactRoute
-  '/faq': typeof FaqRoute
-  '/gallery': typeof GalleryRoute
-  '/menu': typeof MenuRoute
-  '/reservation': typeof ReservationRoute
+  "/": typeof IndexRoute
+  "/about": typeof AboutRoute
+  "/checkout": typeof CheckoutRoute
+  "/contact": typeof ContactRoute
+  "/faq": typeof FaqRoute
+  "/gallery": typeof GalleryRoute
+  "/menu": typeof MenuRoute
+  "/reservation": typeof ReservationRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/checkout': typeof CheckoutRoute
-  '/contact': typeof ContactRoute
-  '/faq': typeof FaqRoute
-  '/gallery': typeof GalleryRoute
-  '/menu': typeof MenuRoute
-  '/reservation': typeof ReservationRoute
+  "/": typeof IndexRoute
+  "/about": typeof AboutRoute
+  "/checkout": typeof CheckoutRoute
+  "/contact": typeof ContactRoute
+  "/faq": typeof FaqRoute
+  "/gallery": typeof GalleryRoute
+  "/menu": typeof MenuRoute
+  "/reservation": typeof ReservationRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/checkout': typeof CheckoutRoute
-  '/contact': typeof ContactRoute
-  '/faq': typeof FaqRoute
-  '/gallery': typeof GalleryRoute
-  '/menu': typeof MenuRoute
-  '/reservation': typeof ReservationRoute
+  "/": typeof IndexRoute
+  "/about": typeof AboutRoute
+  "/checkout": typeof CheckoutRoute
+  "/contact": typeof ContactRoute
+  "/faq": typeof FaqRoute
+  "/gallery": typeof GalleryRoute
+  "/menu": typeof MenuRoute
+  "/reservation": typeof ReservationRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    | '/'
-    | '/about'
-    | '/checkout'
-    | '/contact'
-    | '/faq'
-    | '/gallery'
-    | '/menu'
-    | '/reservation'
+    | "/"
+    | "/about"
+    | "/checkout"
+    | "/contact"
+    | "/faq"
+    | "/gallery"
+    | "/menu"
+    | "/reservation"
   fileRoutesByTo: FileRoutesByTo
   to:
-    | '/'
-    | '/about'
-    | '/checkout'
-    | '/contact'
-    | '/faq'
-    | '/gallery'
-    | '/menu'
-    | '/reservation'
+    | "/"
+    | "/about"
+    | "/checkout"
+    | "/contact"
+    | "/faq"
+    | "/gallery"
+    | "/menu"
+    | "/reservation"
   id:
-    | '__root__'
-    | '/'
-    | '/about'
-    | '/checkout'
-    | '/contact'
-    | '/faq'
-    | '/gallery'
-    | '/menu'
-    | '/reservation'
+    | "__root__"
+    | "/"
+    | "/about"
+    | "/checkout"
+    | "/contact"
+    | "/faq"
+    | "/gallery"
+    | "/menu"
+    | "/reservation"
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -134,61 +134,61 @@ export interface RootRouteChildren {
   ReservationRoute: typeof ReservationRoute
 }
 
-declare module '@tanstack/react-router' {
+declare module "@tanstack/react-router" {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
+    "/": {
+      id: "/"
+      path: "/"
+      fullPath: "/"
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
+    "/about": {
+      id: "/about"
+      path: "/about"
+      fullPath: "/about"
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/checkout': {
-      id: '/checkout'
-      path: '/checkout'
-      fullPath: '/checkout'
+    "/checkout": {
+      id: "/checkout"
+      path: "/checkout"
+      fullPath: "/checkout"
       preLoaderRoute: typeof CheckoutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
+    "/contact": {
+      id: "/contact"
+      path: "/contact"
+      fullPath: "/contact"
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/faq': {
-      id: '/faq'
-      path: '/faq'
-      fullPath: '/faq'
+    "/faq": {
+      id: "/faq"
+      path: "/faq"
+      fullPath: "/faq"
       preLoaderRoute: typeof FaqRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/gallery': {
-      id: '/gallery'
-      path: '/gallery'
-      fullPath: '/gallery'
+    "/gallery": {
+      id: "/gallery"
+      path: "/gallery"
+      fullPath: "/gallery"
       preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/menu': {
-      id: '/menu'
-      path: '/menu'
-      fullPath: '/menu'
+    "/menu": {
+      id: "/menu"
+      path: "/menu"
+      fullPath: "/menu"
       preLoaderRoute: typeof MenuRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/reservation': {
-      id: '/reservation'
-      path: '/reservation'
-      fullPath: '/reservation'
+    "/reservation": {
+      id: "/reservation"
+      path: "/reservation"
+      fullPath: "/reservation"
       preLoaderRoute: typeof ReservationRouteImport
       parentRoute: typeof rootRouteImport
     }
@@ -209,9 +209,9 @@ export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
 
-import type { getRouter } from './router.jsx'
-import type { startInstance } from './start.js'
-declare module '@tanstack/react-start' {
+import type { getRouter } from "../router.jsx"
+import type { startInstance } from "../start.js"
+declare module "@tanstack/react-start" {
   interface Register {
     ssr: true
     router: Awaited<ReturnType<typeof getRouter>>
