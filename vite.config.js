@@ -6,6 +6,19 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+// TanStack's route-tree generator always appends a typed `Register` footer.
+// This project is plain JavaScript, so strip that footer before bundling.
+const stripRouteTreeTypeFooter = {
+  name: "strip-route-tree-type-footer",
+  enforce: "pre",
+  transform(code, id) {
+    if (!id.includes("routeTree.gen.js")) return null;
+    const marker = code.indexOf("\nimport type ");
+    if (marker === -1) return null;
+    return { code: `${code.slice(0, marker)}\n`, map: null };
+  },
+};
+
 export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.js (our SSR error wrapper).
@@ -16,5 +29,8 @@ export default defineConfig({
       disableTypes: true,
       generatedRouteTree: "routeTree.gen.js",
     },
+  },
+  vite: {
+    plugins: [stripRouteTreeTypeFooter],
   },
 });
