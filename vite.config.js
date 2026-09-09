@@ -14,7 +14,7 @@ export default defineConfig({
     // Keep the generated route tree as plain JavaScript (pure JS project).
     router: {
       disableTypes: true,
-      generatedRouteTree: "./src/routeTree.gen.js",
+      generatedRouteTree: "routeTree.gen.js",
     },
   },
 });
